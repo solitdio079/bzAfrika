@@ -5,6 +5,10 @@ body {
   color: #fefefe;
 }
 
+section {
+  overflow: hidden;
+}
+
 header {
   min-height: 60vh;
 }
