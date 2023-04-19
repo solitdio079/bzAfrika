@@ -163,6 +163,12 @@ a:hover {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .team {
+    padding: 1.5rem;
+  }
+}
+
 .team {
   padding: 3.5rem;
   position: relative;
