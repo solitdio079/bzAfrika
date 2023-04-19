@@ -10,6 +10,7 @@ section {
 }
 
 header {
+  width: 100vw;
   min-height: 60vh;
 }
 
@@ -139,7 +140,7 @@ a:hover {
 }
 
 .events .event {
-  max-width: 400px;
+  max-width: 300px;
   margin: 0.5rem 0.5rem;
 }
 

@@ -9,6 +9,7 @@ section {
 }
 
 header {
+  width: 100vw;
   min-height: 60vh;
   #underlay {
     position: absolute;
@@ -110,7 +111,7 @@ a:hover {
   margin-top: 75px;
   padding: 3.5rem;
   .event {
-    max-width: 400px;
+    max-width: 300px;
     margin: 0.5rem 0.5rem;
     .event-img {
       z-index: -1;
