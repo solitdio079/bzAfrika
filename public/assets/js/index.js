@@ -10,6 +10,7 @@ import {
     loginEmail,
     loginPwd,
     loginForm,
+    accountBtn
 
 } from './UI.js'
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js'
@@ -18,6 +19,7 @@ import {
     onAuthStateChanged,
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
+    signOut
 } from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js'
 import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js'
 
@@ -97,9 +99,10 @@ function signInFunction(e) {
 
 onAuthStateChanged(auth, user => {
     if (user != null) {
-        console.log('Logged in')
-
-        window.location.href = "index.html"
+        console.log(user)
+        if (window.location.pathname !== '/index.html') {
+             window.location.href = 'index.html'
+        } 
     } else {
         console.log('Not connected!')
     }
@@ -114,6 +117,9 @@ switch (window.location.pathname) {
     case '/login.html':
         loginForm.addEventListener('submit', signInFunction)
         break
+    
+    case '/index.html':
+        break;
 
     default:
         break
