@@ -1,17 +1,16 @@
 import {
-    fullName,
-    submitBtn,
-    signUpForm,
-    loader,
-    signUpEmail,
-    pwd,
-    confirmPwd,
-    feedBack,
-    loginEmail,
-    loginPwd,
-    loginForm,
-    accountBtn
-
+  fullName,
+  submitBtn,
+  signUpForm,
+  loader,
+  signUpEmail,
+  pwd,
+  confirmPwd,
+  feedBack,
+  loginEmail,
+  loginPwd,
+  loginForm,
+  accountBtn,
 } from './UI.js'
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js'
 import {
@@ -119,6 +118,7 @@ switch (window.location.pathname) {
         break
     
     case '/index.html':
+        accountBtn.href ="login.html"
         break;
 
     default:
