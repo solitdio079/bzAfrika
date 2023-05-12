@@ -211,3 +211,63 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+
+/*******************************************
+              SIGN UP PAGE
+*********************************************/
+
+.form-container {
+  width: 80vw;
+  max-width: 600px;
+  margin: 5% auto;
+  padding: 1.5rem;
+  border: #fbff05 1px solid;
+  .heading {
+    display: flex;
+    flex-direction: column;
+    padding: 0.1rem;
+    text-align: center;
+    img {
+      margin: 0rem auto 1rem auto;
+    }
+    h3 {
+      color: #fbff05;
+    }
+  }
+  form {
+    .form-submit-container {
+      text-align: center;
+      .form-submit {
+        border: #fbff05 1px solid;
+        color: #fbff05;
+        background: transparent;
+      }
+      .form-submit:hover {
+        border: #010101 1px solid;
+        color: #010101;
+        background: #fbff05;
+      }
+    }
+    padding: 0.1rem;
+    .form-text {
+      color: #fbff05;
+    }
+    input {
+      background: #010101;
+      color: #fefefe;
+    }
+    input:focus {
+      background: #010101;
+      color: #fefefe;
+    }
+    .form-text {
+      small {
+        color: #fefefe;
+      }
+    }
+  }
+  .footer {
+    margin: 1rem auto;
+    text-align: center;
+  }
+}
